@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI — Tommy G</title>
+<meta name="description" content="Tommy Georgopoulos — Mechanical Engineering student at UIC. Engineering design, AI projects, and video editing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">TOMMY<span>.</span>G</a>
+    <ul><li><a href="engineering.html">Engineering</a></li><li><a href="ai.html" class="active">AI</a></li><li><a href="social.html">Social Media</a></li><li><a href="index.html#about">About</a></li></ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <a class="back mono" href="index.html">← Home</a>
+    <h1>AI</h1>
+    <p>Computer vision, voice agents, desktop automation, and simulation. Each project is built to be tested, not just demoed.</p>
+  </div>
+</header>
+
+<section style="border-top:none;padding-top:0">
+  <div class="wrap">
+    <div class="grid">
+      <article class="card">
+        <div class="media">
+          <span class="ph mono">assets/caddieai.jpg</span>
+          <img src="assets/caddieai.jpg" alt="CaddieAI app" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <div class="kind mono">Mobile app · Full-stack · CV</div>
+          <h3>Fairway (formerly CaddieAI) <span class="status mono">TestFlight</span></h3>
+          <p>A golf companion app built by a caddie: live GPS yardages on satellite hole maps, shot tracking, real USGA/WHS handicaps, and AI green reads from a photo. Flutter app, Supabase backend with row-level security, and a Cloudflare Worker gateway that keeps every API key off the device. A FastAPI ball-detection service is in progress.</p>
+          <div class="pills"><span>Flutter</span><span>Supabase</span><span>Cloudflare Workers</span><span>FastAPI</span><span>YOLOv8</span></div>
+          <p style="margin:14px 0 0"><a class="mono" style="color:var(--accent2);font-size:.85rem" href="https://github.com/tgeorgopoulos/puttline-detection" target="_blank">Detector training code →</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media">
+          <span class="ph mono">assets/deskagent.jpg</span>
+          <img src="assets/deskagent.jpg" alt="DeskAgent control panel" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <div class="kind mono">AI agent · Browser automation</div>
+          <h3>DeskAgent</h3>
+          <p>A local voice-controlled agent that turns a spoken request into a step-by-step plan, reads it back, and only acts after you confirm. It drives a browser with Playwright to read pages and collect information from websites that allow automated access, saves each successful task as a recipe that replays in seconds, and blocks credential entry and unapproved sends in code rather than in a prompt.</p>
+          <div class="pills"><span>Python</span><span>Playwright</span><span>Speech-to-text</span><span>Wake word</span><span>pytest</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media">
+          <span class="ph mono">assets/recipe-engine.jpg</span>
+          <img src="assets/recipe-engine.jpg" alt="Recipe Engine" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <div class="kind mono">Windows automation · MCP server</div>
+          <h3>Recipe Engine</h3>
+          <p>Records a desktop or browser workflow once and replays it in seconds with no AI model in the loop. Every step is located by its UI Automation identity, verified after it runs, and refused if it would type a password or press Send, Buy or Delete. In a 50-run reliability test, Notepad and Calculator replays succeeded 50 out of 50 with a median of about 2 seconds.</p>
+          <div class="pills"><span>Python</span><span>UI Automation</span><span>Playwright</span><span>MCP</span><span>DPAPI</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media">
+          <span class="ph mono">assets/poker.jpg</span>
+          <img src="assets/poker.jpg" alt="Texas Hold'em Poker AI" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <div class="kind mono">Probability · Simulation</div>
+          <h3>Texas Hold'em Poker AI <span class="status mono">First AI project</span></h3>
+          <p>My first AI project. A poker engine built from scratch with NumPy and no poker libraries: a hand evaluator, Monte Carlo win probabilities, a strategy engine that recommends bet, call, raise or fold from pot odds and position, and simulated opponents. To test whether it was actually learning, I set one opponent to go all-in every hand and checked whether the AI picked up on it. It did.</p>
+          <div class="pills"><span>Python</span><span>NumPy</span><span>Monte Carlo</span><span>Expected value</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Want to work together?</h2>
+    <p>Open to Summer 2027 internships in mechanical engineering and AI/ML, plus freelance work.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/tgeorgopoulos" target="_blank">GitHub</a>
+      <a class="btn primary" href="https://www.fiverr.com/tomg2006" target="_blank">Hire me on Fiverr</a>
+    </div>
+  </div>
+</section>
+
+<footer class="mono">© 2026 Tommy Georgopoulos · Built in Chicago</footer>
+
+</body>
+</html>
